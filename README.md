@@ -1,2 +1,2 @@
-# cse210-06.
-Don't crush game
+> cse210-06.
+# Don't crush game
