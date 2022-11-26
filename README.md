@@ -15,21 +15,19 @@
 
 ## Game Specification
 ---
-Elude is a game where the player try to avoid any collision with the elements that are falling from the top of the screen.
+Elude is a game where the player try to avoid any collision with the elements that are falling from the top of the screen and trying to catch the gems that are falling too.
 
  ### Elude Rules
  
    "Elude" game is played according to the following rules:
 
    * Several blocks(image) and extra are randomly positioned and falling on the screen.
-   * The player start with 3 lives. The player needs to elude all the blocks and shoot the aliens.
+   * The player start with 3 lives. The player needs to elude all the blocks and catch the gems.
    * The Player can move left and right, to avoid any collision with the blocks.
        * The player moves with the keypath.
-   * When the player crush any block lost points.
-   * If the player shoot a block erans points.
+   * When the player crush any block lost a live.
+   * If the player catch a gem erans points.
    * Each 100 points is a level up.
-   * When the player shoot an alient earns lives.
-   * If the player touch an alien lost a life
    *  "Game Over" message is displayed on the middle of the scren, when the player lost his lives.
 
 ## Game Design
@@ -104,13 +102,13 @@ Elude is a game where the player try to avoid any collision with the elements th
     - get_points(): Gets the element value
    
 
-* Object: Alien(Actor): " A movible thing that participates in the game"
+* Object: gem(Actor): " A movible thing that participates in the game"
     Responsability: 
-     -  The responsibility of the block is to move itself.
+     -  The responsibility of the gem is to move itself.
  States:
-    - get_animation(): Gets the block's image.
-    - get_body(): Gets the block's body.
-    - move_next(): Moves the block's body using its velocity
+    - get_animation(): Gets the gem's image.
+    - get_body(): Gets the gem's body.
+    - move_next(): Moves the gem's body using its velocity
     - get_points(): Gets the element value
 
 
@@ -177,15 +175,6 @@ Elude is a game where the player try to avoid any collision with the elements th
     - swing_left(): Steers the vehicle to the left.
     - swing_right(): Steers the vehicle to the right.
     - stop_moving(): Stops the vehicle from moving.
-
-
-* Object: Bullet(Actor): "A solid, spherical object that is bounced around in the game"
-    Responsinility: Constructs a new Bullet.
-    States:
-    - Execute the method is_debugg from the actor class through polymorphism.
-    - get_body(): Gets the bullet's body
-    - get_image(): Gets the bullet's image.
-    - release(): release the bullet in a fixed direction.
 
 
 * Object: Rectangle: "A 4-sided flat shape with straight sides."
@@ -271,7 +260,7 @@ Elude is a game where the player try to avoid any collision with the elements th
     - execute(): using polymorphism from action class.
 
 
-* Object: Draw Bullet Action(Action): "the bullet action"
+* Object: Draw Gem Action(Action): "the gem action"
     States: 
     - execute(): using polymorphism from action class.
 
@@ -306,11 +295,6 @@ Elude is a game where the player try to avoid any collision with the elements th
 
 
 * Object: Load Assets Action (Action):
-    States: 
-    - execute(): using polymorphism from action class.
-
-
-* Object: Move Bullet Action(Action):
     States: 
     - execute(): using polymorphism from action class.
 
