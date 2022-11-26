@@ -17,7 +17,7 @@
 ---
 Elude is a game where the player try to avoid any collision with the elements that are falling from the top of the screen.
 
- ### Don't Crush it Rules
+ ### Elude Rules
  
    "Elude" game is played according to the following rules:
 
