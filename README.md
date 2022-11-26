@@ -55,8 +55,7 @@ Elude is a game where the player try to avoid any collision with the elements th
     - prepare_in_play(): comtinue game.
     - prepare_game_over(): prepare game over.
     "Casting methods"
-    - activate_bullet()
-    - add_bullet()
+    - add_gem()
     - add_blocks()
     - add_dialog()
     - add_level()
