@@ -21,13 +21,13 @@ Elude is a game where the player try to avoid any collision with the elements th
  
    "Elude" game is played according to the following rules:
 
-   * Several blocks(image) and extra are randomly positioned and falling on the screen.
-   * The player start with 3 lives. The player needs to elude all the blocks and catch the gems.
-   * The Player can move left and right, to avoid any collision with the blocks.
+   * One drop of water (image) is randomly positioned and moving around the screen.
+   * The player start with 3 lives. The player needs to elude the water and catch the fish.
+   * The Player can move left and right, to avoid any collision with the drop.
        * The player moves with the keypath.
-   * When the player crush any block lost a live.
-   * If the player catch a gem erans points.
-   * Each 100 points is a level up.
+   * When the player crush the drop lost a live.
+   * If the player catch a fish erans points.
+   * Each time that the player catch a fish is a level up.
    *  "Game Over" message is displayed on the middle of the scren, when the player lost his lives.
 
 ## Game Design
@@ -91,7 +91,7 @@ Elude is a game where the player try to avoid any collision with the elements th
     - next_image(): Gets the next image to display.
    
 
-* Object: Block(Actor): "A solid obstacle, shaped object that is falling from the top of the screen."
+* Object: Drop(Actor): "A solid obstacle, shaped object that is falling from the top of the screen."
     Responsability: 
     -  The responsibility of the block is to move itself.
     States:
@@ -101,7 +101,7 @@ Elude is a game where the player try to avoid any collision with the elements th
     - get_points(): Gets the element value
    
 
-* Object: gem(Actor): " A movible thing that participates in the game"
+* Object: Fish(Actor): " A movible thing that participates in the game"
     Responsability: 
      -  The responsibility of the gem is to move itself.
  States:
