@@ -473,4 +473,4 @@ project folder. Select the main module inside the hunter folder and click the "r
 
 ## Autors
 ---
-- Greis Michell Garcia Villanueva
+- Greis Michell Garcia Villanueva - greis.tolosa@gmail.com
