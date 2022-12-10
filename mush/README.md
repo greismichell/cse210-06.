@@ -27,7 +27,7 @@ root                    (project root folder)
     +-- services        (various service classes)
   +-- __main__.py       (entry point for program)
   +-- constants.py      (game constants)
-+-- README.md           (general info)
+  +-- README.md           (general info)
 ```
 
 ## Required Technologies
